@@ -9,9 +9,35 @@ import SwiftUI
 
 @main
 struct Bartenders_FriendApp: App {
+	
+	@State var selectedTab: Int = 1
+	
     var body: some Scene {
         WindowGroup {
-            ContentView()
+			TabView(selection: $selectedTab) {
+				// Experimental Tab
+				NavigationView {
+					Form {
+						ExperimentalCocktails()
+					}
+				}
+				.tabItem {
+					Image(systemName: "testtube.2")
+					Text("Experimental")
+				}
+				//Library Tab
+				NavigationView {
+					Form {
+						Cocktails()
+					}
+				}
+				.tabItem {
+					Image(systemName: "books.vertical")
+					Text("Library")
+				}
+				.tag(1) // set library tab to default tab
+			}
+			.accentColor(.red)
         }
     }
 }
