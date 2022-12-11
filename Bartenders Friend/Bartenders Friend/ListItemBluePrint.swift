@@ -18,7 +18,7 @@ struct ListItemBluePrint: View {
 			Image(imgName)
 				.resizable()
 				.aspectRatio(contentMode: .fill)
-				.frame(width: 90, height: 80, alignment: .top)
+				.frame(width: 90, height: 90, alignment: .top)
 				.cornerRadius(.greatestFiniteMagnitude)
 			VStack (alignment: .leading) {
 				Spacer()
