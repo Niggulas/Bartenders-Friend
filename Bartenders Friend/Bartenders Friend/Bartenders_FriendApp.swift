@@ -36,6 +36,7 @@ struct Bartenders_FriendApp: App {
 					Text("Library")
 				}
 				.tag(1) // set library tab to default tab
+				
 			}
 			.accentColor(.red)
         }
