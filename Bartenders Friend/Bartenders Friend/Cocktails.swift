@@ -64,6 +64,8 @@ struct Cocktails: View {
 			
 			NewCocktail(title: "Whiskey Sour", imgName: "WhiskeySour", rating: 4.5, ingredients: ["3/4 oz Lemon juice", "1/2 oz Egg white", "2 oz Bourbon", "3/4 oz Simple syrup", "1 Dash Angostura bitters"], notes: ["Dry shake lemon and egg", "Add Bourbon, Simple syrup and ice", "Rocks glass", "Small ice", "Wait till foam seperates", "Dash Angostura on top", "1/2 orange slice + cherry"])
 			
+			NewCocktail(title: "Gold Rush", imgName: "GoldRush", rating: 4, ingredients: ["2 oz Bourbon", "3/4 oz Lemon juice", "1/4 oz Honey syrup", "1/4 oz Simple", "1/4 oz Agave syrup"], notes: ["Shaken", "Rocks Glass", "Big ice cube", "Lemon Peel"])
+			
 		}
     }
 }
