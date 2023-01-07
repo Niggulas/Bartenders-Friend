@@ -14,12 +14,12 @@ struct ConvertRatingToStars: View {
 		HStack {
 			// TODO: minimize code to recuring unit
 			/*
-			ForEach(1..<6) { i in
-				debugImage
-				
-				
-			}
-			*/
+			 ForEach(1..<6) { i in
+			 debugImage
+			 
+			 
+			 }
+			 */
 			
 			// For Loop
 			/*
@@ -36,63 +36,62 @@ struct ConvertRatingToStars: View {
 			 */
 			
 			// Funtioning Code
+			if rating > 0.75 {
+				Image(systemName: "star.fill")
+			} else if rating < 0.25 {
+				Image(systemName: "star")
+			} else if rating <= 0.75 && rating >= 0.25 {
+				if Int(UIDevice.current.systemVersion.components(separatedBy: ".")[0]) ?? 0 < 15 {
+					Image(systemName: "star.leadinghalf.fill")
+				} else {
+					Image(systemName: "star.leadinghalf.filled")
+				}
+			}
+			if rating > 1.75 {
+				Image(systemName: "star.fill")
+			} else if rating < 1.25 {
+				Image(systemName: "star")
+			} else if rating <= 1.75 && rating >= 1.25 {
+				if Int(UIDevice.current.systemVersion.components(separatedBy: ".")[0]) ?? 0 < 15 {
+					Image(systemName: "star.leadinghalf.fill")
+				} else {
+					Image(systemName: "star.leadinghalf.filled")
+				}
+			}
+			if rating > 2.75 {
+				Image(systemName: "star.fill")
+			} else if rating < 2.25 {
+				Image(systemName: "star")
+			} else if rating <= 2.75 && rating >= 2.25 {
+				if Int(UIDevice.current.systemVersion.components(separatedBy: ".")[0]) ?? 0 < 15 {
+					Image(systemName: "star.leadinghalf.fill")
+				} else {
+					Image(systemName: "star.leadinghalf.filled")
+				}
+			}
+			if rating > 3.75 {
+				Image(systemName: "star.fill")
+			} else if rating < 3.25 {
+				Image(systemName: "star")
+			} else if rating <= 3.75 && rating >= 3.25 {
+				if Int(UIDevice.current.systemVersion.components(separatedBy: ".")[0]) ?? 0 < 15 {
+					Image(systemName: "star.leadinghalf.fill")
+				} else {
+					Image(systemName: "star.leadinghalf.filled")
+				}
+			}
+			if rating > 4.75 {
+				Image(systemName: "star.fill")
+			} else if rating < 4.25 {
+				Image(systemName: "star")
+			} else if rating <= 4.75 && rating >= 4.25 {
+				if Int(UIDevice.current.systemVersion.components(separatedBy: ".")[0]) ?? 0 < 15 {
+					Image(systemName: "star.leadinghalf.fill")
+				} else {
+					Image(systemName: "star.leadinghalf.filled")
+				}
+			}
 			
-			 if rating > 0.75 {
-			 Image(systemName: "star.fill")
-			 } else if rating < 0.25 {
-			 Image(systemName: "star")
-			 } else if rating <= 0.75 && rating >= 0.25 {
-			 if Int(UIDevice.current.systemVersion.components(separatedBy: ".")[0]) ?? 0 < 15 {
-			 Image(systemName: "star.leadinghalf.fill")
-			 } else {
-			 Image(systemName: "star.leadinghalf.filled")
-			 }
-			 }
-			 if rating > 1.75 {
-			 Image(systemName: "star.fill")
-			 } else if rating < 1.25 {
-			 Image(systemName: "star")
-			 } else if rating <= 1.75 && rating >= 1.25 {
-			 if Int(UIDevice.current.systemVersion.components(separatedBy: ".")[0]) ?? 0 < 15 {
-			 Image(systemName: "star.leadinghalf.fill")
-			 } else {
-			 Image(systemName: "star.leadinghalf.filled")
-			 }
-			 }
-			 if rating > 2.75 {
-			 Image(systemName: "star.fill")
-			 } else if rating < 2.25 {
-			 Image(systemName: "star")
-			 } else if rating <= 2.75 && rating >= 2.25 {
-			 if Int(UIDevice.current.systemVersion.components(separatedBy: ".")[0]) ?? 0 < 15 {
-			 Image(systemName: "star.leadinghalf.fill")
-			 } else {
-			 Image(systemName: "star.leadinghalf.filled")
-			 }
-			 }
-			 if rating > 3.75 {
-			 Image(systemName: "star.fill")
-			 } else if rating < 3.25 {
-			 Image(systemName: "star")
-			 } else if rating <= 3.75 && rating >= 3.25 {
-			 if Int(UIDevice.current.systemVersion.components(separatedBy: ".")[0]) ?? 0 < 15 {
-			 Image(systemName: "star.leadinghalf.fill")
-			 } else {
-			 Image(systemName: "star.leadinghalf.filled")
-			 }
-			 }
-			 if rating > 4.75 {
-			 Image(systemName: "star.fill")
-			 } else if rating < 4.25 {
-			 Image(systemName: "star")
-			 } else if rating <= 4.75 && rating >= 4.25 {
-			 if Int(UIDevice.current.systemVersion.components(separatedBy: ".")[0]) ?? 0 < 15 {
-			 Image(systemName: "star.leadinghalf.fill")
-			 } else {
-			 Image(systemName: "star.leadinghalf.filled")
-			 }
-			 }
-			 
 			
 		}
 	}
@@ -111,28 +110,28 @@ struct ConvertRatingToStars: View {
 	 }
 	 }
 	 
-	
-	var debugImage: some View {
-		print(index)
-		if rating > index + 0.75 {
-			increasIndex()
-			return Image(systemName: "star.fill")
-		} else if rating < index + 0.25 {
-			increasIndex()
-			return Image(systemName: "star")
-		} else if rating <= index + 0.75 && rating >= index + 0.25 {
-			if Int(UIDevice.current.systemVersion.components(separatedBy: ".")[0]) ?? 0 < 15 {
-				increasIndex()
-				return Image(systemName: "star.leadinghalf.fill")
-			} else {
-				increasIndex()
-				return Image(systemName: "star.leadinghalf.filled")
-			}
-		}
-		return Image(systemName: "xmark.octagon")
-	}
-	func increasIndex() {
-		index += 1
-	}
+	 
+	 var debugImage: some View {
+	 print(index)
+	 if rating > index + 0.75 {
+	 increasIndex()
+	 return Image(systemName: "star.fill")
+	 } else if rating < index + 0.25 {
+	 increasIndex()
+	 return Image(systemName: "star")
+	 } else if rating <= index + 0.75 && rating >= index + 0.25 {
+	 if Int(UIDevice.current.systemVersion.components(separatedBy: ".")[0]) ?? 0 < 15 {
+	 increasIndex()
+	 return Image(systemName: "star.leadinghalf.fill")
+	 } else {
+	 increasIndex()
+	 return Image(systemName: "star.leadinghalf.filled")
+	 }
+	 }
+	 return Image(systemName: "xmark.octagon")
+	 }
+	 func increasIndex() {
+	 index += 1
+	 }
 	 */
 }
