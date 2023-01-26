@@ -34,7 +34,6 @@ struct Bartenders_FriendApp: App {
 				//Library Tab
 				NavigationView {
 					Form {
-						
 						Cocktails()
 					}
 				}
@@ -43,6 +42,25 @@ struct Bartenders_FriendApp: App {
 					Text("Library")
 				}
 				.tag(1) // set library tab to default tab
+				
+				//Filter tab
+				NavigationView {
+					FilterPage()
+						.onAppear(perform: {
+							FilterPage().setVariable(value: true)
+							print(".onAppear was triggert; var should be true, acctual state is:")
+							print(FilterPage().filter)
+						})
+						.onDisappear(perform: {
+							FilterPage().filter = false
+							print("Left the filter page\nVariable is nor set to:")
+							print(FilterPage().filter)
+						})
+				}
+				.tabItem {
+					Image(systemName: "list.bullet.circle")
+					Text("Filter")
+				}
 				
 			}
 			.accentColor(.red)

@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct ConvertRatingToStars: View {
+	
 	var rating: Double
+	
 	var body: some View {
 		HStack {
 			ForEach (0..<5) { index in
@@ -16,6 +18,7 @@ struct ConvertRatingToStars: View {
 			}
 		}
 	}
+	
 	func conversion(index: Double) -> Image {
 		if rating > index + 0.75 {
 			return Image(systemName: "star.fill")

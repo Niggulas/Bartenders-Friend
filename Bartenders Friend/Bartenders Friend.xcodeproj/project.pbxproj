@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1752CBDF2975A5180059FCB0 /* FilterPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1752CBDE2975A5180059FCB0 /* FilterPage.swift */; };
 		17B8BBAC29416246000C7ABF /* ConvertRatingToStars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B8BBAB29416246000C7ABF /* ConvertRatingToStars.swift */; };
 		17B8BBAE29416419000C7ABF /* ItemBluePrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B8BBAD29416419000C7ABF /* ItemBluePrint.swift */; };
 		17B8BBB02941645D000C7ABF /* ListItemBluePrint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B8BBAF2941645D000C7ABF /* ListItemBluePrint.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1752CBDE2975A5180059FCB0 /* FilterPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterPage.swift; sourceTree = "<group>"; };
 		17B8BBAB29416246000C7ABF /* ConvertRatingToStars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertRatingToStars.swift; sourceTree = "<group>"; };
 		17B8BBAD29416419000C7ABF /* ItemBluePrint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemBluePrint.swift; sourceTree = "<group>"; };
 		17B8BBAF2941645D000C7ABF /* ListItemBluePrint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemBluePrint.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				17B8BBAF2941645D000C7ABF /* ListItemBluePrint.swift */,
 				17B8BBAD29416419000C7ABF /* ItemBluePrint.swift */,
 				17B8BBAB29416246000C7ABF /* ConvertRatingToStars.swift */,
+				1752CBDE2975A5180059FCB0 /* FilterPage.swift */,
 				17FB27C1293D1FAB00CF1947 /* Assets.xcassets */,
 				17FB27C3293D1FAB00CF1947 /* Preview Content */,
 			);
@@ -158,6 +161,7 @@
 				17B8BBB529416B35000C7ABF /* Cocktails.swift in Sources */,
 				17B8BBB02941645D000C7ABF /* ListItemBluePrint.swift in Sources */,
 				17B8BBAE29416419000C7ABF /* ItemBluePrint.swift in Sources */,
+				1752CBDF2975A5180059FCB0 /* FilterPage.swift in Sources */,
 				17FB27BE293D1FAB00CF1947 /* Bartenders_FriendApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

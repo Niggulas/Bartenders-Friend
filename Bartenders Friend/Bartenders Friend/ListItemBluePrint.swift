@@ -13,6 +13,7 @@ struct ListItemBluePrint: View {
 	var rating: Double
 	
 	var body: some View {
+		
 		HStack {
 			// Image
 			Image(imgName)
