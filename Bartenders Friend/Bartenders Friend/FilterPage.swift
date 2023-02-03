@@ -10,10 +10,10 @@ import SwiftUI
 struct FilterPage: View {
 	@State var filter = false
 	
-	@State var whiskey = false
-	@State var rum = false
-	@State var vodka = false
-	@State var gin = false
+	@State var whiskey = true
+	@State var rum = true
+	@State var vodka = true
+	@State var gin = true
 	
 	@State var woCitrus = false
 	@State var lemon = false
@@ -171,9 +171,8 @@ struct FilterPage: View {
 				.cornerRadius(15)
 				
 				
-				Form {
 					Cocktails()
-				}
+					
 				
 				
 				Spacer()
