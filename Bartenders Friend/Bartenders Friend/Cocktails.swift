@@ -66,6 +66,10 @@ struct Cocktails: View {
 			
 			NewCocktail(title: "Gold Rush", imgName: "GoldRush", rating: 4, ingredients: ["2 oz Bourbon", "3/4 oz Lemon juice", "1/4 oz Honey syrup", "1/4 oz Simple", "1/4 oz Agave syrup"], notes: ["Shaken", "Rocks Glass", "Big ice cube", "Lemon Peel"])
 			
+			NewCocktail(title: "Rum Punch", imgName: "RumPunch", rating: 4, ingredients: ["1 1/4 oz light rum", "1 1/4 oz dark rum", "2 oz pineapple juice", "1 oz orange juice", "1/4 oz lime juice", "1/4 oz grenadine"], notes: ["Shaken", "Fancy glass", "Ice", "Lime wheel", "Cherry"])
+			
+			NewCocktail(title: "Mojito", imgName: "Mojito", rating: 4.5, ingredients: ["3 mint leaves", "1/2 oz simple syrup", "2 oz white rum", "3/4 oz lime juice", "Top soda water"], notes: ["Muddle mint with simple syrup", "Add rum, lime and ice", "Shake", "Highball glass", "Ice", "Top whith soda water", "Lime wheel"])
+			
 		}
     }
 }

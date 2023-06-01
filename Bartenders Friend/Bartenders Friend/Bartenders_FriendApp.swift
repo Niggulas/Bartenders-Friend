@@ -43,7 +43,9 @@ struct Bartenders_FriendApp: App {
 				}
 				.tag(1) // set library tab to default tab
 				
+				
 				//Filter tab
+				/*
 				NavigationView {
 					FilterPage()
 						.onAppear(perform: {
@@ -61,6 +63,7 @@ struct Bartenders_FriendApp: App {
 					Image(systemName: "list.bullet.circle")
 					Text("Filter")
 				}
+				 */
 				
 			}
 			.accentColor(.red)
